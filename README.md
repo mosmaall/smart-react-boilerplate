@@ -17,3 +17,7 @@ https://www.styled-components.com/docs
 7.hot-reloader
 
 8.flow
+
+9.prettier please install prettier extension in vscode.
+
+10.eslint please install eslint extension in vscode.
