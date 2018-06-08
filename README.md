@@ -1,3 +1,5 @@
+<img src = "https://raw.githubusercontent.com/mosmaall/smart-react-boilerplate/master/src/images/readme-bg.png"  alt="react boilerplate banner"></img>
+
 <div align="center"><strong>Start your react project as fast as a rocket !</strong></div>
 
 The boilerplate aims to follow best practices for building smart reusable apps and component libraries with React & Mobx Stack.
