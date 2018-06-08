@@ -52,13 +52,18 @@
     "whatwg-fetch": "2.0.3"
   },
   "devDependencies": {
+    "eslint-plugin-prettier": "^2.6.0",
     "flow-bin": "^0.74.0",
+    "husky": "^0.14.3",
+    "prettier": "1.13.4",
+    "pretty-quick": "^1.6.0",
     "react-hot-loader": "^4.3.0"
   },
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "precommit": "pretty-quick --staged"
   },
   "jest": {
     "collectCoverageFrom": [
