@@ -1,4 +1,4 @@
-<div align="center"><strong>Start your react project as fast as a roket !</strong></div>
+<div align="center"><strong>Start your react project as fast as a rocket !</strong></div>
 
 The boilerplate aims to follow best practices for building smart reusable apps and component libraries with React & Mobx Stack.
 
