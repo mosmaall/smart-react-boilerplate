@@ -1,6 +1,6 @@
 {
   "extends": "react-app",
-  "plugins": ["prettier", "prettier/standard", "prettier/react"],
+  "plugins": ["prettier"],
   "rules": {
     "jsx-quotes": ["error", "prefer-double"],
     "space-before-function-paren": "off",
