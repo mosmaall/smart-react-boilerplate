@@ -64,7 +64,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "precommit": "pretty-quick --staged"
+    "precommit": "pretty-quick --staged",
+    "clean": "rm -rf build"
   },
   "jest": {
     "collectCoverageFrom": [
