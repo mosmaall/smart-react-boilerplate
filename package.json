@@ -58,8 +58,7 @@
     "flow-bin": "^0.74.0",
     "husky": "^0.14.3",
     "prettier": "1.13.4",
-    "pretty-quick": "^1.6.0",
-    "react-hot-loader": "^4.3.0"
+    "pretty-quick": "^1.6.0"
   },
   "scripts": {
     "start": "node scripts/start.js",
