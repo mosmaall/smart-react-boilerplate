@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { hot } from 'react-hot-loader'
 import { Provider as StoreProvider } from 'mobx-react'
 import Routes from './Routes'
 import { getInstanceStores } from './stores'
@@ -14,4 +13,4 @@ class App extends Component {
   }
 }
 
-export default hot(module)(App)
+export default App
