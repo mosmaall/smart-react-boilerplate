@@ -1,7 +1,8 @@
 import React from 'react'
+import HeaderBar from '../components/HeaderBar'
 
 const HomePage = () => {
-  return <div>This is HomePage</div>
+  return <HeaderBar title={'asdsadsaasd'} />
 }
 
 export default HomePage
