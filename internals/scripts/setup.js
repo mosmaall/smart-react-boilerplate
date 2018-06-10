@@ -31,26 +31,18 @@ cleanRepo(() => {
 function cleanRepo(callback) {
   fs.readFile('.git/config', 'utf8', (err, data) => {
     if (!err) {
-      let isClonedRepo =
-        typeof data === 'string' &&
-        (data.match(/url\s*=/g) || []).length === 1 &&
-        /smart-react-boilerplate\/smart-react-boilerplate\.git/.test(data)
-      if (isClonedRepo) {
-        process.stdout.write('\nDo you want to clear old repository? [Y/n] ')
-        process.stdin.resume()
-        process.stdin.on('data', data => {
-          let val = data.toString().trim()
-          if (val === 'y' || val === 'Y' || val === '') {
-            process.stdout.write('Removing old repository')
-            shell.rm('-rf', '.git/')
-            addCheckMark(callback)
-          } else {
-            dontClearRepo('', callback)
-          }
-        })
-      } else {
-        dontClearRepo('\n', callback)
-      }
+      process.stdout.write('\nDo you want to clear old repository? [Y/n] ')
+      process.stdin.resume()
+      process.stdin.on('data', data => {
+        let val = data.toString().trim()
+        if (val === 'y' || val === 'Y' || val === '') {
+          process.stdout.write('Removing old repository')
+          shell.rm('-rf', '.git/')
+          addCheckMark(callback)
+        } else {
+          dontClearRepo('', callback)
+        }
+      })
     } else {
       callback()
     }
