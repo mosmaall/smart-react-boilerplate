@@ -68,7 +68,8 @@
     "precommit": "pretty-quick --staged",
     "clean": "rm -rf build",
     "presetup": "npm i chalk shelljs",
-    "setup": "node ./internals/scripts/setup.js"
+    "setup": "node ./internals/scripts/setup.js",
+    "postsetup": "npm run build:dll"
   },
   "jest": {
     "collectCoverageFrom": [

@@ -34,7 +34,7 @@ function cleanRepo(callback) {
       let isClonedRepo =
         typeof data === 'string' &&
         (data.match(/url\s*=/g) || []).length === 1 &&
-        /react-boilerplate\/react-boilerplate\.git/.test(data)
+        /smart-react-boilerplate\/smart-react-boilerplate\.git/.test(data)
       if (isClonedRepo) {
         process.stdout.write('\nDo you want to clear old repository? [Y/n] ')
         process.stdin.resume()
