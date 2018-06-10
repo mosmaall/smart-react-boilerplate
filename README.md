@@ -8,7 +8,8 @@ The boilerplate aims to follow best practices for building smart reusable apps a
 
 1.  Clone this repo using `git clone --depth=1 https://github.com/mosmaall/smart-react-boilerplate.git`
 2.  Move to the appropriate directory: `cd react-boilerplate`.<br />
-3.  Run `npm start` <br />
+3.  Setup project (Remove git repo)`npm run setup` <br />
+4.  Run project `npm start` <br />
 
 Now you're ready to fly!
 
@@ -28,10 +29,10 @@ https://www.styled-components.com/docs
 
 6.redux
 
-7.hot-reloader
+7.flow
 
-8.flow
+8.prettier
 
-9.prettier please install prettier extension in vscode.
+9.eslint
 
-10.eslint please install eslint extension in vscode.
+10.mobx
