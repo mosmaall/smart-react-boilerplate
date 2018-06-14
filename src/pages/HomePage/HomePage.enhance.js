@@ -7,6 +7,10 @@ let query = gql`
     pokemon(name: $name) {
       id
       name
+      resistant
+      classification
+      types
+      image
     }
   }
 `

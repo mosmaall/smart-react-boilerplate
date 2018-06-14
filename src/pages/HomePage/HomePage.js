@@ -23,7 +23,7 @@ const BodyContainer = styled.div`
 function withNoContent(Component) {
   return function EnchancedComponent({ data, ...props }) {
     if (data) {
-      return <Component {...props} />
+      return <Component item={data} />
     }
     return (
       <div>
