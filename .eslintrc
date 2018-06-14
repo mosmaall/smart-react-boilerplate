@@ -1,6 +1,7 @@
 {
-  "extends": "react-app",
-  "plugins": ["prettier"],
+  "parser": "babel-eslint",
+  "extends": ["prettier", "prettier/standard", "prettier/react"],
+  "plugins": ["flowtype", "standard", "promise"],
   "rules": {
     "jsx-quotes": ["error", "prefer-double"],
     "space-before-function-paren": "off",
