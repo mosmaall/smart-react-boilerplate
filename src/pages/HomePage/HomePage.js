@@ -37,7 +37,6 @@ const DataListWithNoContent = withNoContent(DataList)
 
 const HomePage = enhance((props: Props) => {
   const { keyword, handleChange, data } = props
-  console.log(data)
   return (
     <div>
       <HeaderBar>Pokemon Dictionary</HeaderBar>
