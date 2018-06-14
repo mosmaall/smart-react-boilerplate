@@ -10,7 +10,7 @@ const Home = {
   home: Loadable({
     ...LOADABLE_CONFIG,
     loader: () =>
-      import(/* webpackChunkName: "route.HomePage" */ './pages/HomePage'),
+      import(/* webpackChunkName: "route.HomePage.HomePage" */ './pages/HomePage'),
   }),
 }
 
