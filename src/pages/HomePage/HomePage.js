@@ -1,11 +1,22 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const HomePage = () => {
+import enhance from './HomePage.enhance'
+import HeaderBar from '../../components/HeaderBar'
+
+const HomePageContainer = styled.div`
+  padding-top: 80px;
+`
+
+const HomePage = enhance((props: Props) => {
+  const { onHandleClick } = props
   return (
-    <div>
-      <p>HomePage</p>
-    </div>
+    <HomePageContainer>
+      <HeaderBar>Cat App</HeaderBar>
+      <button onClick={onHandleClick}>LOAD CAT</button>
+    </HomePageContainer>
   )
-}
+})
 
+HomePage.displayName = 'HomePage'
 export default HomePage
