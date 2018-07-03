@@ -1,1 +1,1 @@
-export { default } from './HomePage.container.js'
+export { default } from './HomePage'
